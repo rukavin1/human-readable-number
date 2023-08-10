@@ -59,7 +59,7 @@ module.exports = function toReadable(n) {
     }
 
     if(n > 100 && n < 1000 && n % 100 !==0 && n % 10 !==0 && n % 100 < 20) {
-        return `${ones[Math.floor(number/100)]} hundred ${ones[number%100]}`
+        return `${ones[Math.floor(n/100)]} hundred ${ones[n%100]}`
     } 
    
     if(n > 100 && n < 1000 && n % 100 !==0 && n % 10 !==0 && n % 100 !==11 && n % 100 > 19) {
