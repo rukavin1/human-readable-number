@@ -35,10 +35,12 @@ module.exports = function toReadable(n) {
         'ninety',
     ]
 
-
+    if (n === 0) {
+        return 'zero';
+    }
 
     if (n <= 19) {               
-        return ones[n]
+        return ones[n];
     }
 
       
